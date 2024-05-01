@@ -4,6 +4,7 @@ var seconds = document.getElementById("seconds")
 var Day = document.getElementById("day")
 var Month = document.getElementById("month")
 var Year = document.getElementById("year")
+var Medium = document.getElementById("medium")
 
 
 
@@ -20,5 +21,12 @@ setInterval(function(){
     Day.innerText = dayNames[currentDate.getDay()];
     Month.innerText = MonthNames[currentDate.getMonth()];
     Year.innerText = currentDate.getFullYear();
+    if(hours.innerText < 13){
+        medium.innerText = "AM";
+
+    }
+    else{
+        medium.innerText = "PM";
+    }
 }, 1000); 
 
