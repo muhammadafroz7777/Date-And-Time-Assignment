@@ -1,3 +1,7 @@
+body{
+  background-image: url(./image/bg.jpg);
+}
+
 .parrent{
     width: 1280px;
     margin: 200px auto;
@@ -6,6 +10,7 @@
     
     h1 {
         text-align: center;
+        font-size: 60px;
       }
       
       .container {
@@ -27,6 +32,7 @@
         border: 1px solid violet;
         font-size: 40px;
         cursor: pointer;
+        border-radius: 10px;
       }
       .box:hover {
         background-color: violet;
